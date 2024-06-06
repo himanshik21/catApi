@@ -13,11 +13,6 @@
   align-items: center;
 }
 
-.search-bar {
-  width: 100%;
-  margin-bottom: 20px;
-}
-
 @media (max-width: 600px) {
   .search-bar {
     margin-bottom: 10px;
@@ -28,10 +23,13 @@
 @media (max-width: 600px) {
   .MuiToolbar-root {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    margin-top: 10px;
   }
   .MuiToolbar-root > * {
     margin-bottom: 5px;
+    margin-left: 50px;
+    margin-top: 4px;
   }
   .MuiInputBase-root {
     margin-bottom: 5px;
