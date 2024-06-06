@@ -1,11 +1,13 @@
 import { useState } from "react";
-import { AppBar, Toolbar, InputBase, IconButton, styled } from "@mui/material";
+import {
+  AppBar,
+  Toolbar,
+  InputBase,
+  IconButton,
+  styled,
+  Typography,
+} from "@mui/material";
 import { Search as SearchIcon } from "@mui/icons-material";
-
-const Logo = styled("img")({
-  width: "60px",
-  marginRight: "20px",
-});
 
 const SearchInput = styled(InputBase)(({ theme }) => ({
   borderRadius: theme.shape.borderRadius,
@@ -27,7 +29,9 @@ function Navbar({ onSearch }) {
   return (
     <AppBar position="static">
       <Toolbar style={{ display: "flex", justifyContent: "space-between" }}>
-        <Logo src="/public/assets/logo.png" alt="Logo" />
+        <Typography variant="h6" component="div">
+          Dogs Directory
+        </Typography>
         <div style={{ display: "flex", alignItems: "center" }}>
           <SearchInput
             placeholder="Search Dogs"
